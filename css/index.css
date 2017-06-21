@@ -1,6 +1,18 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    background: #f6f6f6;
+    font-family: 'Fira Sans', sans-serif;
+    background: #eee;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: #72e8ff;
+}
+span {
+    color: #72e8ff;
+}
+header{
+    background: #494949;
 }
 .logo {
     width: 62px;
@@ -9,19 +21,30 @@ body {
     font-family: 'Alex Brush', cursive;
     text-transform: uppercase;
     font-size: 50px;
-    text-decoration: none;
-    color: #9be2ef;
+    color: #72e8ff;
     display: block;
 }
-.home, .about, .portfolio, .contacts {
-    border-bottom: 5px solid #9be2ef;
+.menu li, .language li {
+    display: inline;
+}
+header, .home, .about, .portfolio, .contacts {
+    border-bottom: 5px solid #72e8ff;
+}
+.content {
+    background: #f2f2f2;
+}
+.slider img {
+    width: 260px;
+    height: 200px;
 }
 .socials__list li {
-    display: inline-block;
-    width: 80px;
+    display: inline;
+}
+.socials__list a:hover {
+    color: red;
 }
 .socials__list img {
-    width: 80px;
+    width: 85px;
 }
 .footer__menu li {
     display: inline;
