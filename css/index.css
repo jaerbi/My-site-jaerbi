@@ -8,9 +8,12 @@ a {
 a:hover {
     color: #72e8ff;
 }
-span {
+h1:first-letter, h2:first-letter, span {
     color: #72e8ff;
 }
+h1:nth-of-type(2) {
+    color: #72e8ff;
+ }
 header{
     background: #494949;
 }
