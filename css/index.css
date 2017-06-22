@@ -1,3 +1,49 @@
+/*@import "reset.css";*/
+/*Reset file*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END reset*/
 body {
     font-family: 'Fira Sans', sans-serif;
     background: #eee;
@@ -11,11 +57,20 @@ a:hover {
 h1:first-letter, h2:first-letter, span {
     color: #72e8ff;
 }
-header{
+header {
     background: #494949;
+}
+.header__wrap{
+    margin: 0 auto;
+    max-width: 1170px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .logo {
     width: 62px;
+    padding-left: 20px;
 }
 .logo a {
     font-family: 'Alex Brush', cursive;
@@ -24,11 +79,44 @@ header{
     color: #72e8ff;
     display: block;
 }
+.language {
+    padding-right: 20px;
+}
 .menu li, .language li {
     display: inline;
 }
 header, .home, .about, .portfolio, .contacts {
     border-bottom: 5px solid #72e8ff;
+}
+main {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.home {
+    background: url(../images/home-bg.jpg)no-repeat;
+    background-size: cover;
+}
+.home__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 930px;
+    position: relative;
+}
+.home h1 {
+    font-size: 72px;
+    margin-right: 60px;
+    margin-top: 100px;
+}
+.home p {
+    font-size: 28px;
+    margin-right: 120px;
+    margin-top: 20px;
+}
+.home__buttons {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .content {
     background: #f2f2f2;

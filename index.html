@@ -4,89 +4,95 @@
 <head>
     <meta charset="UTF-8">
     <title>My site Jaerbi</title>
-    <!--Google font Alex Brush-->
+    <!-- Google font Alex Brush -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
-    <!--Google font Fira Sans-->
+    <!-- Google font Fira Sans -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <!-- Meta tag to control layout on mobile browsers -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <!-- Header __STARS__-->
     <header>
-        <div class="logo">
-            <a href="index.html">a</a>
+        <div class="header__wrap">
+            <div class="logo">
+                <a href="index.html">a</a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            Головна
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            Про мене
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            Портфоліо
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacts">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="language">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                                UA
+                            </a>
+                    </li>
+                    <li>
+                        <a href="lang-en.html">
+                                EN
+                            </a>
+                    </li>
+                    <li>
+                        <a href="lang-ru.html">
+                                RU
+                            </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#home">
-                        Головна
-                    </a>
-                </li>
-                <li>
-                    <a href="#about">
-                        Про мене
-                    </a>
-                </li>
-                <li>
-                    <a href="#portfolio">
-                        Портфоліо
-                    </a>
-                </li>
-                <li>
-                    <a href="#contacts">
-                        Контакти
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="language">
-            <ul>
-                <li>
-                    <a href="index.html">
-                            UA
-                        </a>
-                </li>
-                <li>
-                    <a href="lang-en.html">
-                            EN
-                        </a>
-                </li>
-                <li>
-                    <a href="lang-ru.html">
-                            RU
-                        </a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <!-- Header __END__-->
     <!-- Main __STARS__-->
     <main>
         <section id="home" class="home">
-            <h1>
-                Авраменко <span>Ю</span>рій
-            </h1>
-            <p>
-                веб-розробник
-            </p>
-            <!--main buttons-->
-            <div>
-                <ul>
-                    <li>
-                        <a href="#">
-                            Резюме
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Зв'язатись зі мною
-                        </a>
-                    </li>
-                </ul>
+            <div class="home__wrap">
+                <h1>
+                    Авраменко <span>Ю</span>рій
+                </h1>
+                <p>
+                    веб-розробник
+                </p>
+                <!--main buttons-->
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Резюме
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Зв'язатись зі мною
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         <section id="about" class="about">
