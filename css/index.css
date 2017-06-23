@@ -1,5 +1,5 @@
 /*@import "reset.css";*/
-/*Reset file*/
+/*___Reset file*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,7 +43,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*END reset*/
+/*___END reset*/
 body {
     font-family: 'Fira Sans', sans-serif;
     background: #eee;
@@ -57,6 +57,7 @@ a:hover {
 h1:first-letter, h2:first-letter, span {
     color: #72e8ff;
 }
+/*___Header START___*/
 header {
     background: #494949;
 }
@@ -88,12 +89,11 @@ header {
 header, .home, .about, .portfolio, .contacts {
     border-bottom: 5px solid #72e8ff;
 }
-main {
-    margin: 0 auto;
-    max-width: 1170px;
-}
+/*___Header END___*/
+/*___main START___*/
+/*Section home __*/
 .home {
-    background: url(../images/home-bg.jpg)no-repeat;
+    background: url(../images/home-bg.jpg) 50% 50% no-repeat;
     background-size: cover;
 }
 .home__wrap {
@@ -101,6 +101,8 @@ main {
     flex-direction: column;
     align-items: flex-end;
     height: 930px;
+    max-width: 1170px;
+    margin: 0 auto;
     position: relative;
 }
 .home h1 {
@@ -115,25 +117,108 @@ main {
 }
 .home__buttons {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 300px;
+    right: 200px;
+}
+/*Section about __*/
+.about {
+    background: url(../images/about-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.about__wrap, .portfolio__wrap, .contacts__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.about__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*.about__me, .about__skills, .about__experience {
+    padding: 0 20px;
+    padding-top: 50px;
+}*/
+.title {
+    display: flex;
+    justify-content: center;
+}
+.title h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.title h2:first-letter {
+    font-size: 40px;
+    padding-right: 3px;
 }
 .content {
-    background: #f2f2f2;
+    font-size: 1.1em;
+    background: rgba(174, 178, 178, .8);
+    min-width: 220px;
+    padding: 20px;
+    margin: 0 20px 20px;
+}
+/*Section portfolio __*/
+.portfolio {
+    background: url(../images/portfolio-bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+.portfolio__wrap .title, .contacts .title {
+    color: #fff;
+}
+.slider ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .slider img {
     width: 260px;
     height: 200px;
 }
-.socials__list li {
-    display: inline;
+/*Section contacts __*/
+.contacts {
+    background: #363838;
 }
-.socials__list a:hover {
-    color: red;
+.contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
-.socials__list img {
+.socials, .write_me {
+    display: flex;
+    flex-direction: column;
+}
+.contacts__title {
+    align-self: center;
+}
+.contacts__title h3 {
+    font-size: 20px;
+    color: #72e8ff;
+    margin-bottom: 40px;
+}
+.socials, .write_me {
+    width: 48%;
+}
+.socials__nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+.socials__nav-link {
+    display: flex;
+    flex-direction: column;
+}
+.socials__nav-link img{
     width: 85px;
 }
+.socials__nav-link span {
+    margin-top: 10px;
+    align-self: center;
+}
+.socials__nav-item a span:hover {
+    color: red;
+}
+/*___main END___*/
+
 .footer__menu li {
     display: inline;
     font-size: 0;
