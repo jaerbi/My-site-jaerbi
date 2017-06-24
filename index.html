@@ -3,14 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Meta tag to control layout on mobile browsers -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My site Jaerbi</title>
-    <!-- Google font Alex Brush -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
-    <!-- Google font Fira Sans -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -72,15 +70,17 @@
     <main>
         <section id="home" class="home">
             <div class="home__wrap">
-                <h1>
-                    Авраменко <span>Ю</span>рій
-                </h1>
-                <p>
-                    веб-розробник
-                </p>
+                <div class="home__text">
+                    <h1>
+                        Авраменко <span>Ю</span>рій
+                    </h1>
+                    <p>
+                        веб-розробник
+                    </p>
+                </div>
                 <!--main buttons-->
                 <div class="home__buttons">
-                    <ul>
+                    <ul class="home__buttons-list">
                         <li>
                             <a href="#">
                                 Резюме
@@ -272,8 +272,8 @@
                         Портфоліо
                     </h2>
                 </div>
-                <nav class="slider">
-                    <ul>
+                <nav class="portfolio__slider">
+                    <ul class="portfolio__slider-list">
                         <li>
                             <a href="images/layout_1.jpg">
                                 <img src="images/layout_1.jpg" alt="layout 1">
@@ -368,18 +368,19 @@
                         </h3>
                     </div>
                     <form action="https://formspree.io/jaerbi42@gmail.com" method="POST">
-                        <label for="user-name">Впишіть ім'я :</label>
-                        <input id="user-name" type="text" name="name" placeholder="Ваше ім'я" required>
-                        <br>
-                        <label for="user-email">Впишіть Email :</label>
-                        <input id="user-email" type="email" name="email" placeholder="Ваш Email" required>
-                        <br>
-                        <label for="user-wish">Впишіть побажання :</label>
-                        <br>
-                        <textarea id="user-wish" name="wish" placeholder="Ваше побажання" required></textarea>
-                        <br>
+                        <div class="write-me__label">
+                            <label for="user-name">Впишіть ім'я :</label>
+                            <label for="user-email">Впишіть Email :</label>
+                            <label for="user-wish">Впишіть побажання :</label>
+                        </div>
+                        <div class="write-me__input">
+                            <input id="user-name" type="text" name="name" placeholder="Ваше ім'я" required>
+                            <input id="user-email" type="email" name="email" placeholder="Ваш Email" required>
+                            <textarea id="user-wish" name="wish" placeholder="Ваше побажання" required></textarea>
+                        </div>
                         <input class="write-me__button" type="submit" value="Надіслати"/>
                     </form>
+                    
                 </div>
             </div>
         </section>
