@@ -314,78 +314,80 @@
             </div>
         </section>
         <section id="contacts" class="contacts">
-            <div class="title">
+            <div class="contacts__wrap">
+                <div class="title">
                     <h2>
                         Зв'язатись зі мною
                     </h2>
-            </div>
-            <div class="contacts__wrap">
-                <div class="socials">
-                    <div class="contacts__title">
-                        <h3>
-                            Тут мене можна знайти
-                        </h3>
-                    </div>
-                    <nav class="socials__nav">
-                        <ul class="socials__nav-list">
-                            <li class="socials__nav-item">
-                                <a class="socials__nav-link" href="#">
-                                    <img src="images/icon_facebook.svg" alt="Facebook">
-                                    <span>Facebook</span>
-                                </a>
-                            </li>
-                            <li class="socials__nav-item">
-                                <a class="socials__nav-link" href="#">
-                                    <img src="images/icon_gmail.svg" alt="Gmail">
-                                    <span>Gmail</span>
-                                </a>
-                            </li>
-                            <li class="socials__nav-item">
-                                <a class="socials__nav-link" href="#">
-                                    <img src="images/icon_skype.svg" alt="Skype">
-                                    <span>Skype</span>
-                                </a>
-                            </li>
-                            <li class="socials__nav-item">
-                                <a class="socials__nav-link" href="#">
-                                    <img src="images/icon_youtube.svg" alt="YouTube">
-                                    <span>YouTube</span>
-                                </a>
-                            </li>
-                            <li class="socials__nav-item">
-                                <a class="socials__nav-link" href="#">
-                                    <img src="images/icon_twitter.svg" alt="Twitter">
-                                    <span>Twitter</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
                 </div>
-                <div class="write-me">
-                    <div class="contacts__title">
-                        <h3>
-                            Напиши мені
-                        </h3>
-                    </div>
-                    <form action="https://formspree.io/jaerbi42@gmail.com" method="POST">
-                        <div class="write-me__form-wrap">
-                            <div class="write-me__form-label">
-                                <label for="user-name">Впишіть ім'я :</label>
-                                <br>
-                                <label for="user-email">Впишіть Email :</label>
-                                <br>
-                                <label for="user-wish">Впишіть побажання :</label>
-                            </div>
-                            <div class="write-me__form-input">
-                                <input id="user-name" type="text" name="name" placeholder="Ваше ім'я" required>
-                                <br>
-                                <input id="user-email" type="email" name="email" placeholder="Ваш Email" required>
-                                <br>
-                                <textarea id="user-wish" name="wish" placeholder="Ваше побажання" required></textarea>
-                            </div>
+                <div class="contacts__content">
+                    <div class="socials">
+                        <div class="contacts__title">
+                            <h3>
+                                Тут мене можна знайти
+                            </h3>
                         </div>
-                        <input class="write-me__button" type="submit" value="Надіслати"/>
-                    </form>
+                        <nav class="socials__nav">
+                            <ul class="socials__nav-list">
+                                <li class="socials__nav-item">
+                                    <a class="socials__nav-link" href="#">
+                                        <img src="images/icon_facebook.svg" alt="Facebook">
+                                        <span>Facebook</span>
+                                    </a>
+                                </li>
+                                <li class="socials__nav-item">
+                                    <a class="socials__nav-link" href="#">
+                                        <img src="images/icon_gmail.svg" alt="Gmail">
+                                        <span>Gmail</span>
+                                    </a>
+                                </li>
+                                <li class="socials__nav-item">
+                                    <a class="socials__nav-link" href="#">
+                                        <img src="images/icon_skype.svg" alt="Skype">
+                                        <span>Skype</span>
+                                    </a>
+                                </li>
+                                <li class="socials__nav-item">
+                                    <a class="socials__nav-link" href="#">
+                                        <img src="images/icon_youtube.svg" alt="YouTube">
+                                        <span>YouTube</span>
+                                    </a>
+                                </li>
+                                <li class="socials__nav-item">
+                                    <a class="socials__nav-link" href="#">
+                                        <img src="images/icon_twitter.svg" alt="Twitter">
+                                        <span>Twitter</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="write-me">
+                        <div class="contacts__title">
+                            <h3>
+                                Напиши мені
+                            </h3>
+                        </div>
+                        <form action="https://formspree.io/jaerbi42@gmail.com" method="POST">
+                            <div class="write-me__form-wrap">
+                                <div class="write-me__form-label">
+                                    <label class="user-name" for="user-name">Впишіть ім'я :</label>
+                                    <br>
+                                    <label class="user-email" for="user-email">Впишіть Email :</label>
+                                    <br>
+                                    <label class="user-wish" for="user-wish">Впишіть побажання :</label>
+                                </div>
+                                <div class="write-me__form-input">
+                                    <input id="user-name" type="text" name="name" placeholder="Ваше ім'я" required>
+                                    <br>
+                                    <input id="user-email" type="email" name="email" placeholder="Ваш Email" required>
+                                    <br>
+                                    <textarea id="user-wish" name="wish" rows="5" placeholder="Ваше побажання" required></textarea>
+                                </div>
+                            </div>
+                            <input class="write-me__button" type="submit" value="Надіслати"/>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
