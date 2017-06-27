@@ -127,9 +127,9 @@ main section:nth-child(even){
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    background-image: url(../images/about-bg1.jpg);
+    background-image: url(../images/about-bg-min.jpg);
     background-attachment: fixed;
-    background-position: 50% 50%;
+    background-position: 0 99%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -215,7 +215,7 @@ main section:nth-child(even){
     }
 }
 .contacts__wrap {
-    background: url(../images/about-bg2.jpg) repeat;
+    background: url(../images/contacts-bg.jpg) repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 930px;
