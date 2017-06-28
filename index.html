@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My site Jaerbi</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
@@ -17,46 +19,46 @@
     <!-- Header __STARS__-->
     <header>
         <div class="header__wrap">
-            <div class="logo">
+            <div class="header__logo">
                 <a href="index.html">a</a>
             </div>
-            <nav class="menu">
-                <ul>
-                    <li>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item">
                         <a href="#home">
                             Головна
                         </a>
                     </li>
-                    <li>
+                    <li class="header__menu-item">
                         <a href="#about">
                             Про мене
                         </a>
                     </li>
-                    <li>
+                    <li class="header__menu-item">
                         <a href="#portfolio">
                             Портфоліо
                         </a>
                     </li>
-                    <li>
+                    <li class="header__menu-item">
                         <a href="#contacts">
                             Контакти
                         </a>
                     </li>
                 </ul>
             </nav>
-            <nav class="language">
-                <ul>
-                    <li>
+            <nav class="header__language">
+                <ul class="header__language-list">
+                    <li class="header__language-item">
                         <a href="index.html">
                                 UA
                             </a>
                     </li>
-                    <li>
+                    <li class="header__language-item">
                         <a href="lang-en.html">
                                 EN
                             </a>
                     </li>
-                    <li>
+                    <li class="header__language-item">
                         <a href="lang-ru.html">
                                 RU
                             </a>
@@ -105,15 +107,17 @@
                     </div>
                     <div class="content">
                         <p>
-                            Привіт! Я Авраменко Юрій, веб-розробник. Проживаю в місті Калуші Івано-Франківської області. Улюблений вид спорту: їзда на велосипеді. Музика: рок. Фільми: наукова фантастика. Моя улюблен справа верстка сайтів.
+                            Привіт! Я <span>Юрій Авраменко</span>, веб-розробник. Проживаю в місті Калуші Івано-Франківської області. Улюблений вид спорту: їзда на велосипеді. Музика: рок. Фільми: наукова фантастика. Моя улюблен справа верстка сайтів.
                         </p>
+                        <br>
                         <p>
-                            В кінці 2016 року зацікавився веб-розробкою і поринув в неї з головою. Для того щоб верстати сайти необхідно знати HTML, CSS і JavaScript. Для вивчення цих мов я користувався відео уроками, різноманітними 
+                            В кінці 2016 року зацікавився веб-розробкою і поринув в неї з головою. Для того щоб верстати сайти необхідно знати <span>HTML</span>, <span>CSS</span> і <span>JavaScript</span>. Для вивчення цих мов я користувався відео уроками, різноманітними 
                             онлайн курсами, шукав інформацію з різних сайтів.
                         </p>
+                        <br>
                         <p>
-                            В наш час верстка сайтів не може бути без адабтації її для різних мобільних пристроїв, для цього я використовую Bootstrap. Також використовую бібліотеку jQuery вона задає хороший стиль при написанні
-                            JavaScript-коду. При написанні CSS коду зіткнувся з пробблемою, коли таблиця стилів стає величезною, то стає складно її обслуговувати. Для цього я використовую препроцесор SASS. SASS дозволяє використовувати функції які
+                            В наш час верстка сайтів не може бути без адабтації її для різних мобільних пристроїв, для цього я використовую Bootstrap. Також використовую бібліотеку <span>jQuery</span> вона задає хороший стиль при написанні
+                            JavaScript-коду. При написанні CSS коду зіткнувся з пробблемою, коли таблиця стилів стає величезною, то стає складно її обслуговувати. Для цього я використовую препроцесор <span>SASS</span>. SASS дозволяє використовувати функції які
                             недоступні в самом CSS
                         </p>
                     </div>
@@ -126,33 +130,51 @@
                     </div>
                     <div class="content">
                         <p>
-                            Верстка сайтів по PSD-шаблонах. Адаптація сайтів. Знання HTML, CSS, JS, jQuery, Bootstrap, Sass.
+                            Верстка сайтів по PSD-шаблонах. Адаптація сайтів. Знання HTML5, CSS3, JS, jQuery, Bootstrap, Flexbox, Sass.
                         </p>
                         <div class="skills">
                             <ul>
                                 <li>
-                                    HTML
-                                    <span></span>
+                                    HTML5
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-96"></span>
+                                    </div>
                                 </li>
                                 <li>
-                                    CSS
-                                    <span></span>
+                                    CSS3
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-96"></span>
+                                    </div>
                                 </li>
                                 <li>
                                     JavaScript
-                                    <span></span>
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-55"></span>
+                                    </div>
                                 </li>
                                 <li>
                                     jQuery
-                                    <span></span>
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-39"></span>
+                                    </div>
                                 </li>
                                 <li>
                                     Bootstrap
-                                    <span></span>
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-80"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    Flexbox
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-86"></span>
+                                    </div>
                                 </li>
                                 <li>
                                     Sass
-                                    <span></span>
+                                    <div class="skills__progres color-blue">
+                                        <span class="on-70"></span>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -165,101 +187,111 @@
                         </h2>
                     </div>
                     <div class="content">
-                        <div class="time_line-left">
-                            <p>
-                                Почав вивчати HTML по відео уроках.
-                            </p>
-                            <p>
-                                <span>04.01.2017p</span>
-                            </p>
+                        <div class="experience-left">
+                            <div class="time_line-left">
+                                <p>
+                                    Почав вивчати HTML по відео уроках.
+                                </p>
+                                <p class="date-left">
+                                    <span>04.01.2017p</span>
+                                </p>
+                            </div>
+                            <div class="time_line-left">
+                                <p>
+                                    Перші спроби верстки по PSD шаблонах
+                                </p>
+                                <p class="date-left">
+                                    <span>21.01.2017p</span>
+                                </p>
+                            </div>
+                            <div class="time_line-left">
+                                <p>
+                                    Знайомство з jQuery, спроби верстки з використанням JS, jQuery
+                                </p>
+                                <p class="date-left">
+                                    <span>04.03.2017p</span>
+                                </p>
+                            </div>
+                            <div class="time_line-left">
+                                <p>
+                                    Знайомство з SASS, спроби верстки з використанням SASS
+                                </p>
+                                <p class="date-left">
+                                    <span>08.04.2017p</span>
+                                </p>
+                            </div>
+                            <div class="time_line-left">
+                                <p>
+                                    Верстка сайту "indigo-web"
+                                </p>
+                                <p class="date-left">
+                                    <span>28.04.2017p</span>
+                                </p>
+                            </div>
+                            <div class="time_line-left">
+                                <p>
+                                    Верстка сайту "Monuments"
+                                </p>
+                                <p class="date-left">
+                                    <span>16.05.2017p</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="time_line-right">
-                            <p>
-                                Почав вивчати CSS по відео уроках
-                            </p>
-                            <p>
-                                <span>09.01.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-left">
-                            <p>
-                                Перші спроби верстки по PSD шаблонах
-                            </p>
-                            <p>
-                                <span>21.01.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-right">
-                            <p>
-                                Почав вчити JavaScript основи
-                            </p>
-                            <p>
-                                <span>16.02.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-left">
-                            <p>
-                                Знайомство з jQuery, спроби верстки з використанням JS, jQuery
-                            </p>
-                            <p>
-                                <span>04.03.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-right">
-                            <p>
-                                Вивчення Bootstrap, почав верстати за допомогою цього фреймворка
-                            </p>
-                            <p>
-                                <span>23.03.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-left">
-                            <p>
-                                Знайомство з SASS, спроби верстки з використанням SASS
-                            </p>
-                            <p>
-                                <span>08.04.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-right">
-                            <p>
-                                Верстка сайту "indigo"
-                            </p>
-                            <p>
-                                <span>16.04.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-left">
-                            <p>
-                                Верстка сайту "indigo-web"
-                            </p>
-                            <p>
-                                <span>28.04.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-right">
-                            <p>
-                                Верстка сайту "indigo-web 2.0"
-                            </p>
-                            <p>
-                                <span>07.05.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-left">
-                            <p>
-                                Верстка сайту "Monuments"
-                            </p>
-                            <p>
-                                <span>16.05.2017p</span>
-                            </p>
-                        </div>
-                        <div class="time_line-right">
-                            <p>
-                                Я починаю навчання в IT Academy на курсі "HTML5 / CSS3 / JavaScript Fundamentals".
-                            </p>
-                            <p>
-                                <span>12.06.2017p</span>
-                            </p>
+                        <div class="experience-border"></div>
+                        <div class="experience-right">
+                            <div class="time_line-right">
+                                <p>
+                                    Почав вивчати CSS по відео уроках
+                                </p>
+                                <p>
+                                    <span>09.01.2017p</span>
+                                </p>
+                            </div>
+                            
+                            <div class="time_line-right">
+                                <p>
+                                    Почав вчити JavaScript основи
+                                </p>
+                                <p>
+                                    <span>16.02.2017p</span>
+                                </p>
+                            </div>
+                            
+                            <div class="time_line-right">
+                                <p>
+                                    Вивчення Bootstrap, почав верстати за допомогою цього фреймворка
+                                </p>
+                                <p>
+                                    <span>23.03.2017p</span>
+                                </p>
+                            </div>
+                            
+                            <div class="time_line-right">
+                                <p>
+                                    Верстка сайту "indigo"
+                                </p>
+                                <p>
+                                    <span>16.04.2017p</span>
+                                </p>
+                            </div>
+                            
+                            <div class="time_line-right">
+                                <p>
+                                    Верстка сайту "indigo-web 2.0"
+                                </p>
+                                <p>
+                                    <span>07.05.2017p</span>
+                                </p>
+                            </div>
+                            
+                            <div class="time_line-right">
+                                <p>
+                                    Я починаю навчання в IT Academy на курсі "HTML5 / CSS3 / JavaScript Fundamentals".
+                                </p>
+                                <p>
+                                    <span>12.06.2017p</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,39 +306,39 @@
                 </div>
                 <nav class="portfolio__slider">
                     <ul class="portfolio__slider-list">
-                        <li>
-                            <a href="images/layout_1.jpg">
-                                <img src="images/layout_1.jpg" alt="layout 1">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_1.png" alt="layout 1">
                             </a>
                         </li>
-                        <li>
-                            <a href="images/layout_2.jpg">
-                                <img src="images/layout_2.jpg" alt="layout 2">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_2.png" alt="layout 2">
                             </a>
                         </li>
-                        <li>
-                            <a href="images/layout_3.jpg">
-                                <img src="images/layout_3.jpg" alt="layout 3">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_3.png" alt="layout 3">
                             </a>
                         </li>
-                        <li>
-                            <a href="images/layout_4.jpg">
-                                <img src="images/layout_4.jpg" alt="layout 4">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_4.png" alt="layout 4">
                             </a>
                         </li>
-                        <li>
-                            <a href="images/layout_5.jpg">
-                                <img src="images/layout_5.jpg" alt="layout 5">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_5.png" alt="layout 5">
                             </a>
                         </li>
-                        <li>
-                            <a href="images/layout_6.jpg">
-                                <img src="images/layout_6.jpg" alt="layout 6">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_6.png" alt="layout 6">
                             </a>
                         </li>
-                        <li>
-                            <a href="images/layout_7.jpg">
-                                <img src="images/layout_7.jpg" alt="layout 8">
+                        <li class="portfolio__slider-item">
+                            <a href="#">
+                                <img src="images/layout/layout_7.png" alt="layout 8">
                             </a>
                         </li>
                     </ul>
