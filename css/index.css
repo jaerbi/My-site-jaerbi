@@ -339,8 +339,8 @@ main section:nth-child(even){
     background-image: linear-gradient(135deg, rgba(255, 255, 255, .25) 25%, transparent 25%,
 transparent 50%, rgba(255, 255, 255, .25) 50%, rgba(255, 255, 255, .25) 75%,
 transparent 75%, transparent);
-    -webkit-animation: animate-stripes 2s linear infinite;
-    -moz-animation: animate-stripes 2s linear infinite;
+    -webkit-animation: animate-stripes 3s linear infinite;
+    -moz-animation: animate-stripes 3s linear infinite;
 }
 
 .color-blue span {
