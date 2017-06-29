@@ -396,6 +396,7 @@ transparent 75%, transparent);
 }
 .about__experience .content {
     max-width: 900px;
+    min-width: 250px;
     display: flex;
     justify-content: space-between;
 }
@@ -431,6 +432,22 @@ transparent 75%, transparent);
 
 @media screen and (max-width: 900px) {
     .experience-left .time_line-left:before, .experience-right .time_line-right:after  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about__experience .content {
+        padding-left: 5px;
+    }
+    .content .experience-left {
+        margin-right: 15px;
+    }
+
+    .content .experience-right {
+        margin-left: 15px;
+    }
+    .content .experience-borde {
         display: none;
     }
 }
@@ -493,6 +510,7 @@ transparent 75%, transparent);
 .portfolio__slider img {
     width: 260px;
     height: 200px;
+    opacity: .6;
     margin-bottom: 20px;
     -webkit-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75);
@@ -500,9 +518,11 @@ transparent 75%, transparent);
 }
 
 .portfolio__slider img:hover {
+    opacity: 1;
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+    transition: all .3s ease-in;
 }
 
 /*Section contacts __*/
@@ -586,6 +606,14 @@ transparent 75%, transparent);
     display: flex;
     justify-content: space-between;
     width: 600px;
+}
+
+.socials__nav-item {
+    margin-left: 10px;
+}
+
+.socials__nav-item:first-child {
+    margin-left: 0;
 }
 
 .socials__nav-link {
@@ -685,6 +713,7 @@ transparent 75%, transparent);
     border-radius: 8px;
     border: none;
     color: #fff;
+    width: 60%;
     font-size: 28px;
     text-shadow: 3px 3px 5px rgba(94, 94, 94, 1);
     -webkit-box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.65);
@@ -704,6 +733,12 @@ transparent 75%, transparent);
     -webkit-box-shadow: inset 2px 2px 10px 6px rgba(0,0,0,0.65);
     -moz-box-shadow: inset 2px 2px 10px 6px rgba(0,0,0,0.65);
     box-shadow: inset 2px 2px 10px 6px rgba(0,0,0,0.65);
+}
+
+@media screen and (max-width: 600px) {
+    form .write-me__button {
+        width: 100%;
+    }
 }
 /*___main END___*/
 
