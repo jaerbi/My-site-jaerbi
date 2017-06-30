@@ -304,12 +304,18 @@ main section:nth-child(even){
     }
 }
 
+@media screen and (max-width: 800px) {
+    .about .content {
+        margin: 0 5px;
+    }
+}
+
 .content {
     background: rgba(255, 255, 255, .7);
     min-width: 200px;
     max-width: 680px;
     padding: 30px 40px;
-    margin: 0 5px;
+    margin: 0 auto;
     border-radius: 7px;
     -webkit-box-shadow: 0px 0px 33px 3px rgba(77,76,77,1);
     -moz-box-shadow: 0px 0px 33px 3px rgba(77,76,77,1);
