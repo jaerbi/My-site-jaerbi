@@ -243,7 +243,7 @@ main section:nth-child(even){
 }
 
 .home__wrap {
-    background: url(../images/home-bg.jpg) no-repeat;
+    background: url(../images/home-bg_1.jpg) no-repeat;
     background-size: cover;
     height: 930px;
     position: relative;
@@ -317,9 +317,9 @@ main section:nth-child(even){
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
-    background-image: url(../images/about-bg-min.jpg);
+    background-image: url(../images/about-bg-min_1.jpg);
     background-attachment: fixed;
-    background-position: 0 99%;
+    background-position: -190px 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -601,7 +601,7 @@ main section:nth-child(even){
 /*Section portfolio __*/
 .portfolio__wrap {
     height: 930px;
-    background: url(../images/portfolio-bg.jpg) no-repeat;
+    background: url(../images/portfolio-bg_1.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;
 }
