@@ -18,33 +18,22 @@ h1:first-letter, h2:first-letter, span {
     width: 20%;
 }
 
-#btn-top {
-    opacity: .7;
+/*_button go to top_*/
+.scrollUp {
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 40px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #90caf9;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 50%;
-    -webkit-box-shadow: 1px 1px 42px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 42px 0px rgba(0,0,0,0.75);
-    box-shadow: 1px 1px 42px 0px rgba(0,0,0,0.75);
+    width: 64px;
+    height: 64px;
+    z-index: 10;
+    opacity: .65;
+    background: url(../images/arrow-up.svg) no-repeat;
 }
 
-#btn-top:hover {
+.scrollUp:hover {
     opacity: 1;
-    color: #90caf9;
-    background-color: #555;
     transition: all .2s ease-in-out;
-    -webkit-box-shadow: inset 1px 1px 20px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 1px 1px 20px 0px rgba(0,0,0,0.75);
-    box-shadow: inset 1px 1px 20px 0px rgba(0,0,0,0.75);
 }
 
 /*___Header START___*/
@@ -67,28 +56,53 @@ header {
     align-items: center;
 }
 
+.burger_menu {
+    display: none;
+}
+
 @media screen and (max-width: 900px) {
-    .header__language {
+    .burger_menu {
+        margin: 0 auto;
+        display: block;
+        height: 32px;
+        width: 32px;
+        background: url(../images/burger_menu.svg) no-repeat;
+    }
+    
+    .header__menu .burger_triger {
         display: none;
     }
-    .header__wrap {
-        height: 120px;
-    }
+    
     .header__menu {
-        margin: 0 20px;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        z-index: 10;
+        transform: translateX(-50%);
+        background: url(../images/footer-bg.png);
+        border-radius: 10px;
     }
+    
+    .header__menu .header__menu-list {
+        flex-flow: column nowrap;
+    }
+    
     .header__menu-list .header__menu-item {
-        margin-left: 10px;
-        margin-bottom: 6px;
+        margin: 10px;
     }
+    
+    .header__menu-list .header__menu-item:first-of-type {
+        margin: 10px;
+    }
+    
     .header__menu-list .header__menu-item a {
-        padding: 10px 10px;
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .header__wrap {
-        height: 220px;
+    .header__wrap .header__menu {
+        left: 40%;
     }
 }
 
