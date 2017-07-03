@@ -15,6 +15,7 @@ function sendForm(e) {
             dataType: "json"
         })
         .done(function() {
-            $('#myForm').html('<div class="myform">Дякую за повідоблення</div>');
+            document.getElementById("myForm").reset();
+            $('.my-form').html('Дякую! Ваше повідомлення відправлено');
         });
 }

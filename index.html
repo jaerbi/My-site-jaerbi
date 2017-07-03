@@ -1,15 +1,17 @@
 <!doctype html>
 <html lang="uk">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My site Jaerbi</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="shortcut icon" href="jaerbi.ico" type="image/x-icon">
     <link rel="icon" href="jaerbi.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -20,26 +22,26 @@
             <div class="header__logo">
                 <a href="index.html">a</a>
             </div>
-            <nav class="header__menu">
+            <nav class="header__menu ">
                 <a href="#" class="burger_menu"></a>
-                <ul class="header__menu-list burger_triger">
+                <ul id="mobil-nav" class="header__menu-list burger_triger">
                     <li class="header__menu-item">
-                        <a href="index.html">
+                        <a class="smooth" href="#home">
                             Головна
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#about">
+                        <a class="smooth" href="#about">
                             Про мене
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#portfolio">
+                        <a class="smooth" href="#portfolio">
                             Портфоліо
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#contacts">
+                        <a class="smooth" href="#contacts">
                             Контакти
                         </a>
                     </li>
@@ -88,7 +90,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contacts">
+                            <a class="smooth" href="#contacts">
                                 Зв'язатись зі мною
                             </a>
                         </li>
@@ -394,7 +396,7 @@
                         Портфоліо
                     </h2>
                 </div>
-                <nav class="portfolio__slider">
+                <!--<nav class="portfolio__slider">
                     <ul class="portfolio__slider-list">
                         <li class="portfolio__slider-item">
                             <a href="#">
@@ -432,7 +434,46 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav>-->
+                
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/layout/layout_1.png" alt="Flower">
+                        </div>
+                
+                        <div class="item">
+                            <img src="images/layout/layout_1.png" alt="Flower">
+                        </div>
+                
+                        <div class="item">
+                            <img src="images/layout/layout_1.png" alt="Flower">
+                        </div>
+                        
+                        <div class="item">
+                            <img src="images/layout/layout_1.png" alt="Flower">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </section>
         <section id="contacts" class="contacts">
@@ -491,6 +532,7 @@
                             </h3>
                         </div>
                         <form id="myForm">
+                            <div class="my-form"></div>
                             <div class="write-me__form-wrap">
                                 <div class="write-me__form-label">
                                     <label class="user-name" for="user-name">Впишіть ім'я :</label>
@@ -567,7 +609,11 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/go-up-btn.js"></script>
     <script src="js/index.js"></script>
 </body>
 

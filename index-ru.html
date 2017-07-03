@@ -22,24 +22,24 @@
             </div>
             <nav class="header__menu">
                 <a href="#" class="burger_menu"></a>
-                <ul class="header__menu-list burger_triger">
+                <ul id="mobil-nav" class="header__menu-list burger_triger">
                     <li class="header__menu-item">
-                        <a href="index-ru.html">
+                        <a class="smooth" href="home">
                             Главная
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#about">
+                        <a class="smooth" href="#about">
                             Обо мне
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#portfolio">
+                        <a class="smooth" href="#portfolio">
                             Портфолио
                         </a>
                     </li>
                     <li class="header__menu-item">
-                        <a href="#contacts">
+                        <a class="smooth" href="#contacts">
                             Контакты
                         </a>
                     </li>
@@ -49,18 +49,18 @@
                 <ul class="header__language-list">
                     <li class="header__language-item">
                         <a href="index.html">
-                                UA
-                            </a>
+                             UA
+                        </a>
                     </li>
                     <li class="header__language-item">
                         <a href="index-en.html">
-                                EN
-                            </a>
+                            EN
+                        </a>
                     </li>
                     <li class="header__language-item">
                         <a href="index-ru.html">
-                                RU
-                            </a>
+                            RU
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -88,7 +88,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#contacts">
+                            <a class="smooth" href="#contacts">
                                 Связаться со мной
                             </a>
                         </li>
@@ -489,7 +489,8 @@
                                 Напишите мне
                             </h3>
                         </div>
-                        <form>
+                        <form id="myForm">
+                            <div class="my-form"></div>
                             <div class="write-me__form-wrap">
                                 <div class="write-me__form-label">
                                     <label class="user-name" for="user-name">Впишите имя :</label>
@@ -567,6 +568,9 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="js/form.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/go-up-btn.js"></script>
     <script src="js/index.js"></script>
 </body>
 
