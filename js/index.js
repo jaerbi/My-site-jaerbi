@@ -1,9 +1,9 @@
 $(document).ready(function() {
 
     const WINDOW_MAX_HEIGHT_Skills = 1690;
-    const WINDOW_MAX_HEIGHT_Exp = 2200;
+    const WINDOW_MAX_HEIGHT_Exp = 2100;
     const NUM_OF_EXP = 12;
-    const DELAY_TIME = 545;
+    const DELAY_TIME = 200;
     const MAX_HEIGHT_btn = 100;
     const TIME_SCROL = 1000;
     const TIME_BURGER_SLIDE = 300;

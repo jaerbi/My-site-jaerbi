@@ -15,6 +15,6 @@ function sendForm(e) {
             dataType: "json"
         })
         .done(function() {
-            alert('Дякую за ваше повідомлення');
+            $('#myForm').html('<div class="myform">Дякую за повідоблення</div>');
         });
 }
