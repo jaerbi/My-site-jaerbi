@@ -2,6 +2,7 @@ $(function() {
     $('#btn-send').click(sendForm);
 });
 
+
 function sendForm(e) {
     e.preventDefault();
     $.ajax({

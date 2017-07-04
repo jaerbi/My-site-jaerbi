@@ -1,8 +1,14 @@
+* {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 body {
     font-family: 'Fira Sans', sans-serif;
 }
 
-a {
+a, a:hover, a:active, a:focus {
     text-decoration: none;
 }
 
