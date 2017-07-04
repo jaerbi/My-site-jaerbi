@@ -34,7 +34,7 @@ h1:first-letter, h2:first-letter, span {
     height: 64px;
     z-index: 10;
     opacity: .65;
-    background: url(../images/arrow-up.svg) no-repeat;
+    background: url(../images/svg/arrow-up.svg) no-repeat;
 }
 
 .scrollUp:hover {
@@ -72,7 +72,7 @@ header {
         display: block;
         height: 32px;
         width: 32px;
-        background: url(../images/burger_menu.svg) no-repeat;
+        background: url(../images/svg/burger_menu.svg) no-repeat;
     }
     
     .header__menu .burger_triger {
@@ -225,6 +225,17 @@ main section:nth-child(even){
     
     .home__text p {
         margin-top: 20px;
+    }
+    
+    .download {
+        position: relative;
+    }
+    
+    .download img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(50%);
+        right: 60px;
     }
     
     .home__wrap .home__buttons {
@@ -442,6 +453,10 @@ main section:nth-child(even){
     width: 80%;
 }
 
+.on-60 {
+    width: 60%;
+}
+
 .on-70 {
     width: 70%;
 }
@@ -602,38 +617,62 @@ main section:nth-child(even){
 
 /*Section portfolio __*/
 .portfolio__wrap {
-    height: 930px;
     background: url(../images/portfolio-bg_1.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
-.portfolio__slider-list {
-    max-width: 900px;
+.portfolio__slide {
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img  {
     height: 650px;
-    margin: 20px auto 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow: hidden;
+    margin: 0 auto;
 }
 
-.portfolio__slider img {
-    width: 260px;
-    height: 200px;
-    opacity: .6;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 19px 3px rgba(0,0,0,0.75);
+.carousel-indicators {
+    bottom: -65px;
 }
 
-.portfolio__slider img:hover {
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: all .3s ease-in;
+.carousel-indicators li {
+    border: 3px solid #90caf9;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(0,0,0, .6);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(0,0,0, .6);
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0, .6);
+}
+
+.carousel-indicators .active {
+    background: #90caf9;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}
+
+.portfolio__slide .carousel-control.left, .portfolio__slide .carousel-control.right {
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-image: none;
+    background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio__slide .carousel-inner>.item>img,
+    .portfolio__slide .carousel-inner>.item>a>img {
+        height: 550px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio__wrap .portfolio__slide .carousel-inner>.item>img,
+    .portfolio__wrap .portfolio__slide .carousel-inner>.item>a>img {
+        height: 400px;
+    }
 }
 
 /*Section contacts __*/
