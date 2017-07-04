@@ -227,17 +227,6 @@ main section:nth-child(even){
         margin-top: 20px;
     }
     
-    .download {
-        position: relative;
-    }
-    
-    .download img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(50%);
-        right: 60px;
-    }
-    
     .home__wrap .home__buttons {
         right: 50%;
         transform: translateX(50%);
@@ -300,9 +289,20 @@ main section:nth-child(even){
     justify-content: space-between;
 }
 
+.home__download {
+    position: relative;
+}
+    
+.home__download img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
 .home__buttons a {
     display: block;
-    padding: 20px 40px;
+    padding: 20px 50px;
     background: #90caf9;
     text-align: center;
     border-radius: 8px;
